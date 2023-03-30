@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px" width="100%">
+    <tr>
+        <th>
+            id
+        </th>
+        <th>
+            First name
+        </th>
+        <th>
+            Last name
+        </th>
+        <th>
+            Age
+        </th>
+        <th>
+            Avg
+        </th>
+    </tr>
+    {% for std in data %}
+    {% if std.id == 1 %}
+    <tr>
+        <td>{{ std.id }}</td>
+        <td>{{ std.first_name }}</td>
+        <td>{{ std.last_name }}</td>
+        <td>{{ std.age }}</td>
+        <td>{{ std.avg }}</td>
+    </tr>
+    {% endif %}
+    <tr>
+        <td>{{ std.id }}</td>
+        <td>{{ std.first_name }}</td>
+        <td>{{ std.last_name }}</td>
+        <td>{{ std.age }}</td>
+        <td>{{ std.avg }}</td>
+    </tr>
+    {% endfor %}
+    <h1>{{ test }}</h1>
+</table>
+</body>
+</html>
